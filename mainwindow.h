@@ -17,16 +17,16 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
-
-    void on_toolButton_clicked();
-
     void on_btnSaveFile_clicked();
+    void on_btnIconFile_clicked(bool checked);
 
-    void on_btnIconFile_clicked();
+    void on_btnClear_clicked();
+
+    void on_actionAbout_desktop_File_Creator_triggered();
 
 private:
     Ui::MainWindow *ui;
     FileCreator fileCreator;
+    bool isIconSet;
 };
 #endif // MAINWINDOW_H
